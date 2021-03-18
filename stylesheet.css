@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkslateblue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body .container {
+  min-width: 20rem !important;
+  max-width: 25rem !important;
+  overflow: hidden !important;
+}
+
+/* section {
+  background-color: white;
+  min-width: 50vw;
+  max-width: fit-content;
+  min-height: 80vh;
+  max-height: fit-content;
+  margin: 10% auto;
+  line-height: 3rem;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+} */

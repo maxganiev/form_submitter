@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>form driver</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<div class=" container row align-items-center row justify-content-center vh-100 mx-auto text-center">
+<form method="POST">
+<div class="d-flex justify-content-md-between flex-column h-50" style="min-height: 15rem !important;">
+<div>
+<input type="text" name="name" class="form-control text-center" placeholder="Full Name" id="name">
+</div>
+<div>
+<input type="email" name="email" class="form-control text-center" placeholder="Email Address" id="email">
+</div>
+<div>
+<input type="number" name="phone" class="form-control text-center" placeholder="Enter your cell number" id="phone">
+</div>
+<div>
+<textarea placeholder="Your Message" class="form-control text-center" name="message" id="message"></textarea>
+</div>
+<div>
+<button type="submit" class="btn btn-danger">Submit Form</button>
+</div>
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="subject" value="Новое уведомление с сайта">
+</div>
+</form>
+</div>
+  
+</body>
+</html>

@@ -1,0 +1,54 @@
+//GET LIST OF SUBMISSIONS (see txt att.)
+
+
+//FORM SUBMISSION:
+document.querySelector('form').addEventListener('submit', sendMsg);
+window.addEventListener('keydown', (e)=>{
+  if(e.code === 'Enter'){
+    sendMsg(e)
+  }
+});
+window.addEventListener('DOMContentLoaded', ()=> document.querySelector('#name').focus());
+
+
+function sendMsg(e){
+
+const input = {
+name: document.querySelector('#name').value,
+email: document.querySelector('#email').value,
+phone: document.querySelector('#phone').value,
+message: document.querySelector('#message').value
+};
+
+const request = new XMLHttpRequest(); 
+
+if(input.name !== '' && input.email !== '' && input.message !== ''){
+try{
+request.open('POST', 'https://formsubmit.co/ajax/max.ganiev1908@gmail.com', true);
+request.setRequestHeader('Content-Type','application/json; charset=utf-8');
+const body = JSON.stringify(input);
+
+console.log('msg sent');
+console.log(request);
+console.log(body);
+request.send(body);
+
+document.querySelector('#name').value = '';
+document.querySelector('#email').value = '';
+document.querySelector('#phone').value = '';
+document.querySelector('#message').value = '';
+}
+
+catch{
+console.log(Error)
+}
+} else{
+  alert('fill all forms')
+}
+
+
+
+e.preventDefault();
+
+}
+
