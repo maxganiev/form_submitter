@@ -17,7 +17,8 @@ const input = {
 name: document.querySelector('#name').value,
 email: document.querySelector('#email').value,
 phone: document.querySelector('#phone').value,
-message: document.querySelector('#message').value
+message: document.querySelector('#message').value,
+_subject: 'Новое уведомление с сайта'
 };
 
 const request = new XMLHttpRequest(); 
